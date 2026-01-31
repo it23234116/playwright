@@ -57,29 +57,28 @@ test.describe('Singlish to Sinhala Automation Suite', () => {
             test.setTimeout(80000);
             await page.goto('https://www.swifttranslator.com/');
 
-            // Input
+            
             const inputArea = page.getByPlaceholder('Input Your Singlish Text Here.');
             await inputArea.fill(data.input);
             await page.keyboard.press('Space');
 
-            // --- වඩාත් නිවැරදි ලොකේටරය ---
-            // 'Sinhala' යන පෙළ සහිත div එකට පසුව ඇති, ප්‍රතිඵලය පෙන්වන නිශ්චිත පෙට්ටිය තෝරා ගැනීම.
+          
             const outputArea = page.locator('div:has-text("Sinhala") + div.bg-slate-50, div.bg-slate-50').last();
 
-            // ප්‍රතිඵලය එනතෙක් උපරිම තත්පර 10ක් බලා සිටීම
+            
             await expect(outputArea).not.toBeEmpty({ timeout: 10000 });
 
-            // අගය ලබා ගැනීම
+            
             const rawText = await outputArea.innerText();
             
-            // "Copy", "Clear" වැනි බොත්තම් වල අකුරු අහඹු ලෙස එකතු වේ නම් ඒවා ඉවත් කිරීම
+           
             const cleanedActual = rawText.split('\n')[0].trim();
 
             console.log(`[${data.id}] Input: ${data.input}`);
             console.log(`     - Expected: ${data.expected}`);
             console.log(`     - Actual  : ${cleanedActual}`);
 
-            // Assertion
+
             expect.soft(cleanedActual).toContain(data.expected);
             
             if (cleanedActual.includes(data.expected)) {
