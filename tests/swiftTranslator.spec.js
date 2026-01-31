@@ -33,11 +33,11 @@ const testData = [
   { id: 'Pos_Fun_0023', input: 'tika tika vaedi venavaa', expected: 'ටික ටික වැඩි වෙනවා' },
   { id: 'Pos_Fun_0024', input: 'mama heta gedhara enavaa', expected: 'මම හෙට ගෙදර එනවා' },
 
-  { id: 'Neg_Fun_0001', input: 'api kaema kanna yanava', expected: 'අපි කෑම කන්න යනවා' },
-  { id: 'Neg_Fun_0002', input: 'mama paasal giyaa', expected: 'මම පාසල් ගියා' },
-  { id: 'Neg_Fun_0003', input: 'oyaa monavadhdha karannee?', expected: 'ඔයා මොනවද කරන්නේ?' },
+  { id: 'Neg_Fun_0001', input: 'api kaemakanna yanava', expected: 'අපි කෑම කන්න යනවා' },
+  { id: 'Neg_Fun_0002', input: 'mama 123 yanavaa',   expected: 'මම 123 යනවා' },
+  { id: 'Neg_Fun_0003', input: 'oyaa monavadhdhakarannee?', expected: 'ඔයා මොනවද කරන්නේ?' },
 
-  { id: 'Neg_Fun_0004', input: 'karunaakaralaa mata udhavvak karanna', expected: 'කරුණාකරලා මට උදව්වක් කරන්න' },
+  { id: 'Neg_Fun_0004', input: 'ehema karanna baee???!!!',expected: 'එහෙම කරන්න බැයි???!!!' },
   { id: 'Neg_Fun_0005', input: 'api passe kathaa karamu', expected: 'අපි පස්සේ කතා කරමු' },
   { id: 'Neg_Fun_0006', input: 'mata samava denna', expected: 'මට සමාව දෙන්න' },
 
