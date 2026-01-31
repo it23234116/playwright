@@ -38,14 +38,15 @@ const testData = [
   { id: 'Neg_Fun_0003', input: 'oyaa monavadhdhakarannee?', expected: 'ඔයා මොනවද කරන්නේ?' },
 
   { id: 'Neg_Fun_0004', input: 'ehema karanna baee???!!!',expected: 'එහෙම කරන්න බැයි???!!!' },
-  { id: 'Neg_Fun_0005', input: 'api passe kathaa karamu', expected: 'අපි පස්සේ කතා කරමු' },
-  { id: 'Neg_Fun_0006', input: 'mata samava denna', expected: 'මට සමාව දෙන්න' },
+  { id: 'Neg_Fun_0005', input: 'm8, yanna hadhannee', expected: 'ම8, යන්න හදන්නේ' },
+  { id: 'Neg_Fun_0006', input: 'mata samavdenna', expected: 'මට සමාව දෙන්න' },
 
-  { id: 'Neg_Fun_0007', input: 'oyaa hari lassanai', expected: 'ඔයා හරි ලස්සනයි' },
-  { id: 'Neg_Fun_0008', input: 'magee yaluva gedhara inne', expected: 'මගේ යාළුවා ගෙදර ඉන්නේ' },
-  { id: 'Neg_Fun_0009', input: 'mata eeka therenne naehae', expected: 'මට ඒක තේරෙන්නේ නැහැ' },
+  { id: 'Neg_Fun_0007', input: 'y', expected: 'y' },
+  { id: 'Neg_Fun_0008', input: 'magee yaluvagedhara inne', expected: 'මගේ යාළුවා ගෙදර ඉන්නේ' },
+  { id: 'Neg_Fun_0009', input: 'mama geya yanav',expected: 'මම ගෙදර යනව්' },
 
-  { id: 'Neg_Fun_0010', input: 'api oyala samaga yamu', expected: 'අපි ඔයාලා සමග යමු' },
+  { id: 'Neg_Fun_00010', input: 'MAMA GEDHARA YANAVAA', expected: 'මම ගෙදර යනවා' }, 
+  
   { id: 'Pos_UI_0001', input: 'api enavaa', expected: 'As the user types, the output field should automatically update to "අපි එනවා' },
    ];
 
