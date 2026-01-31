@@ -6,7 +6,7 @@ const testData = [
   { id: 'Pos_Fun_0003', input: 'api panthiyata yanavaa', expected: 'අපි පන්තියට යනවා' },
 
   { id: 'Pos_Fun_0004', input: 'oyaata adha dhavasa kohomadha?', expected: 'ඔයාට අද දවස කොහොමද?' },
-  { id: 'Pos_Fun_0005', input: 'oyaa kavadhaa vageedha enna hithan innee?', expected: 'ඔයා කවදා වගේද එන්න හිතන් ඉන්නේ?' },
+  { id: 'Pos_Fun_0005', input: 'mama panthi yanavaa, haebaeyi vahina nisaa dhaenma yannee naehae', expected: 'මම පන්ති යනවා, හැබැයි වහින නිසා දැන්ම යන්නේ නැහැ' },
   { id: 'Pos_Fun_0006', input: 'meeka hariyatama vaeda karanavaadha?', expected: 'මේක හරියටම වැඩ කරනවාද?' },
 
   { id: 'Pos_Fun_0007', input: 'vahaama  methanata enna', expected: 'වහාම  මෙතනට එන්න' },
@@ -91,3 +91,4 @@ test.describe('Singlish to Sinhala Automation Suite', () => {
 });
 //hkjghkjhkjhj
 
+//gvhjjhgjh
