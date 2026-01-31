@@ -1,0 +1,39 @@
+This project uses Playwright to automate testing of the Swift Translator web application.
+It validates Singlish to  Sinhala translations using automated browser tests.
+
+🛠 Technologies Used
+
+i.Playwright
+ii.JavaScript
+iii.Node.js
+iv.VS Code
+v.Chromium / Firefox / WebKit
+
+Prerequisites
+
+i.Node.js (v16 or later)
+ii.npm
+iii.Internet connection
+
+ Project Structure
+PLAYWRIGHT/
+├── .github/workflows/playwright.yml
+├── tests/swiftTranslator.spec.js
+├── playwright-report/
+├── test-results/
+├── playwright.config.js
+├── package.json
+└── README.md
+
+Test Scope
+i.Open Swift Translator website
+ii.Enter Singlish text
+iii.Read Sinhala translation
+iv.Validate expected output
+
+ Setup & Execution
+
+i.Install dependencies:-npm install
+ii.Install browsers:-npx playwright install
+iii.Run tests:-npx playwright test
+iv.View report:-npx playwright show-report
